@@ -1,1 +1,0 @@
-print("Wong Ganteng")
