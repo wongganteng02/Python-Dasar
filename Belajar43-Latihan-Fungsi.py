@@ -39,6 +39,11 @@ def input_user():
     lebar = int(input("Masukkan Lebar: "))
     return lebar,panjang
 
+def pesan_pilih():
+    print(f"\nOperasi Tersedia:")
+    print(f"1. Hitung Luas")
+    print(f"2. Hitung Keliling")
+
 # Fungsi Menghitung Luas
 def LUAS(lebar,panjang):
     return lebar*panjang
@@ -56,11 +61,19 @@ def HASIL(rumus,nilai):
 while True:
     header()
     LEBAR,PANJANG = input_user() # Variable Untuk Simpan Nilai Dari Fungsi input_user
-    hitung_luas = LUAS(LEBAR,PANJANG)
-    hitung_keliling = KELILING(LEBAR,PANJANG)
+    pesan_pilih()
 
-    HASIL("Luas",hitung_luas)
-    HASIL("Keliling",hitung_keliling)
+    pilih = int(input("Pilih Salah Satu Operasi Diatas Menggunakan Angka > "))
+    if pilih == 1:
+        hitung_luas = LUAS(LEBAR,PANJANG)
+        HASIL("Luas",hitung_luas)
+
+    elif pilih == 2:
+        hitung_keliling = KELILING(LEBAR,PANJANG)
+        HASIL("Keliling",hitung_keliling)
+
+    else:
+        print(f"Input Yang Kamu Masukkan Tidak Valid")
 
     lanjut = input("\nApakah Lanjut (y/n)? ")
     if lanjut == "n":
