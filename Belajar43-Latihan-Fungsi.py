@@ -75,9 +75,9 @@ while True:
     else:
         print(f"Input Yang Kamu Masukkan Tidak Valid")
 
-    lanjut = input("\nApakah Lanjut (y/n)? ")
+    lanjut = input("\nApakah Masih Lanjut (y/n)🤨? ")
     if lanjut == "n":
         break
 
-print("SUDAH SELESAI YAH!!😘")
+print("SUDAH SELESAI YAH!!😘\n")
 
