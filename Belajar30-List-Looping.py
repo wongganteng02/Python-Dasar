@@ -46,4 +46,4 @@ data_list = ["Ravino",76,"Fahri",35,65]
 
 for index,data in enumerate(data_list):
     print(f"Index = {index}")
-    print(f"Data = {data}")
+    print(f"Data = {data}\n")

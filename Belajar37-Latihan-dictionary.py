@@ -2,21 +2,21 @@ import datetime as dt
 import os
 
 # Dictionary Utama Untuk Menyimpan Semua Data Dari Dictionary Sementara
-data_mahasiswa = {}  
+data_mahasiswa = {}
 
 while True: # Mengulang Semua Elemen Termasuk Input Data
     os.system("cls") # Fungsi Clear PowerShell Dari Modul "import os"
 
     # Intro Input Data
-    print("="*25) 
+    print("="*25)
     print(f"{'WELOCOME TO DATABASE':^25}")
     print(f"{'DATA MAHASISWA':^25}")
     print("="*25)
 
-    mahasiswa = {} # Dictionary Untuk Menyimpan Hasil Input Sementara  
+    mahasiswa = {} # Dictionary Untuk Menyimpan Hasil Input Sementara
 
     # Input Data Yg Akan Dimasukan Ke Dictionary Sementara
-    # Sebagai Value Dari Key Dalam Bentuk kolom masing-masing 
+    # Sebagai Value Dari Key Dalam Bentuk kolom masing-masing
     mahasiswa['nama'] = input("Nama Mahasiswa: ")
     mahasiswa['prodi'] = input("Nama Prodi: ")
     mahasiswa['nim'] = int(input("NIM Mahasiwa: "))
@@ -27,7 +27,7 @@ while True: # Mengulang Semua Elemen Termasuk Input Data
 
     # Membuat Key Dengan Input
     # .strip --> Menghapus Karakter Jika Ada Spasi Agar Tidak Error
-    # .upper --> Mengkonversi Input key Agar Menjadi Huruf Besar Semua 
+    # .upper --> Mengkonversi Input key Agar Menjadi Huruf Besar Semua
     KEY = input("Key Mahasiswa 3-4 Huruf: ").strip().upper()
     data_mahasiswa.update({KEY: mahasiswa})
 

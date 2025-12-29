@@ -1,6 +1,5 @@
 # FORMAT STRING
-
-## Fungsi Format Sama Dengan Manipulasi String Dgn Tanda + Bedanya Cuma Lebih Simple Format Daripada Manipulasi /(Concatenate) 
+## Fungsi Format Sama Dengan Manipulasi String Dgn Tanda + Bedanya Cuma Lebih Simple Format Daripada Manipulasi /(Concatenate)
 # Contoh Generic / String
 nama = "Kusuma"
 format_str = f"Deri {nama}" # f sebelum Tanda Petik Adalah Format
@@ -45,7 +44,7 @@ print(format_str)
 # Menampilkan Leading Zero / Angka Didepannya
 angka = 700.54321
 format_str = f"Angka Leading Zero = {angka:08.3f}"
-# .3f Adalah Cetak 3 Angka Yg Dibelakang Tanda "." = 700.543 
+# .3f Adalah Cetak 3 Angka Yg Dibelakang Tanda "." = 700.543
 # 8 Adalah Urutan Angka Yg Tercetak Termasuk Tanda "." Dan Dilebihkan 1 Untuk Menambahkan 1 Urutan dari Depan Yg Akan Diisi 0
 # 0 Adalah Angka Yg Ditambahkan Dari Sisa 1 Urutan Depan Dan (HANYA BISA DISI DENGAN ANGKA 0)
 
@@ -66,7 +65,7 @@ print(format_plus)
 # Memformat Persen %
 persentase = 0.0234
 format_persen = f"Format Persen = {persentase:.3%}"
-# 
+#
 # Karna 0 Didepan Tidak Ada Nilainya Jadi Yg Terhitung Hanya 234
 # Dan 3 Angka Dibelakang Tanda "." Jika Tidak Cukup Maka Ditambahkan 0 Dibelakangnya
 
